@@ -8,9 +8,11 @@ export const Container = styled.header`
 
     #banner{
         width: 100%;
+        opacity: 0;
     }
 
     #icon{
+        opacity: 0;
         width: 100px;
         height: 100px;
         margin-top: -50px;
@@ -29,6 +31,7 @@ export const Container = styled.header`
             position: absolute;
             right: 20px;
             top: 12px;
+            opacity: 0;
         }
 
         a + a{
@@ -50,10 +53,12 @@ export const Container = styled.header`
         font-weight: ${ props => props.theme.font.weight.semiBold };
         text-transform: uppercase;
         margin-top: 12px;
+        opacity: 0;
     }
     
     p{
         font-weight: ${ props => props.theme.font.weight.medium };
         color: ${ props => props.theme.colors.gray_300 };
+        opacity: 0; 
     }
 `;

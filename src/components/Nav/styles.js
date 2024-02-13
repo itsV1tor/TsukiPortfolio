@@ -9,6 +9,7 @@ export const Container = styled.nav`
     position: sticky;
     top: 0;
     z-index: 1000;
+    opacity: 0;
 
     a{
         font-weight: ${ props => props.theme.font.weight.medium };

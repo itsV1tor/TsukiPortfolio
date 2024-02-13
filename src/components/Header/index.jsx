@@ -17,7 +17,6 @@ export function Header(){
         const box = bannerRef.current;
         gsap.from(box, {
             y: -160,
-            opacity: 0,
             delay: 1
         })
         
@@ -34,7 +33,6 @@ export function Header(){
         const box = iconRef.current;
         gsap.from(box, {
             y: 160,
-            opacity: 0,
             delay: 2
         })
 
@@ -52,7 +50,6 @@ export function Header(){
 
         gsap.from(box, {
             y: 50,
-            opacity: 0,
             delay: 3
         });
 
@@ -69,8 +66,7 @@ export function Header(){
         const box = descriptionRef.current;
 
         gsap.from(box, {
-           y: -100,
-           opacity: 0,
+           y: 100,
            delay: 3
         });
 
@@ -88,7 +84,6 @@ export function Header(){
 
         gsap.from(box, {
             x: 100,
-            opacity: 0,
             delay: 2
         });
 

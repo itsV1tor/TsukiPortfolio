@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     margin-block: 40px;
+    opacity: 0;
 
     h2{
         font-size: ${ props => props.theme.font.size.normal };

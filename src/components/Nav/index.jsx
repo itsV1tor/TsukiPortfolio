@@ -10,14 +10,13 @@ export function Nav(){
 
         gsap.from(box, {
              y: -50,
-             opacity: 0,
-             delay: 1
+             delay: 3
         });
 
         gsap.to(box, {
             y: 0,
             opacity: 1,
-            delay: 2,
+            delay: 3,
             duration: 2,
             ease: "power2.inOut"
         });

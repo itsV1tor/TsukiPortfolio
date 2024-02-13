@@ -14,7 +14,6 @@ export function Work(){
 
         gsap.from(box, {
             y: 100,
-            opacity: 0,
             delay: 3
         });
 

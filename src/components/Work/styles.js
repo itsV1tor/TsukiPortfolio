@@ -13,6 +13,7 @@ export const Container = styled.section`
         justify-content: center;
         align-items: center;
         gap: 12px;
+        opacity: 0;
         picture{
             height:400px;
         }

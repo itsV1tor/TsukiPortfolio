@@ -10,16 +10,15 @@ export function Headline(props){
 
         gsap.from(box, {
             x: 50,
-            opacity: 0,
-            delay: 2
+            delay: 4
         });
 
         gsap.to(box, {
             x: 0,
             opacity: 1,
-            delay: 2,
+            delay: 4,
             duration: 2,
-            ease: "power3.inOut"
+            ease: "power4.inOut"
         });
     });
 
