@@ -2,7 +2,7 @@ import { Container } from "./styles";
 import { Nav } from "../Nav";
 import { FaInstagram } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
-import { images } from "../../assets";
+import { images } from "../../../public/assets";
 
 export function Header(){
     return(

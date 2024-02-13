@@ -1,6 +1,6 @@
 import { Container } from "./styles";
 import { Headline } from "../Headline";
-import { images } from "../../assets";
+import { images } from "../../../public/assets";
 import { useState } from "react";
 
 export function Work(){
