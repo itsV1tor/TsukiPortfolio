@@ -1,6 +1,6 @@
 export const images = {
-    banner: '/assets/banner.webp',
-    icon: '/assets/icon.webp',
+    banner: '/assets/banner.jpg',
+    icon: '/assets/icon.jpg',
 
     gallery: {
         1: '/assets/img1.webp',

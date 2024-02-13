@@ -17,9 +17,10 @@ export function Work(){
             <div className="gallery">
                 {
                     Object.keys(images.gallery).slice(0, visibleImages).map((key) => (
-                        <div key={ key }>
-                            <img loading="lazy" key={key} src={ images.gallery[key] } alt={ `Image ${ key }` } />
-                        </div>
+                        <picture key={ key }>
+                            <source type="image/webp" />
+                            <img loading="lazy" role="presentation" decoding="async" fetchpriority="high" key={key} src={ images.gallery[key] } alt={ `Image ${ key }` } />
+                        </picture>
                     ))
                 }
             </div>
