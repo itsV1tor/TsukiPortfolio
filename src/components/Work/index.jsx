@@ -1,11 +1,32 @@
 import { Container } from "./styles";
 import { Headline } from "../Headline";
 import { images } from "../../../public/assets";
-import { useState } from "react";
+import { useState, useEffect, useRef } from 'react';
+import gsap from "gsap";
 
 export function Work(){
+    const imageRef = useRef(null);
     const [ visibleImages, setVisibleImages ] = useState(10);
     const totalImages = Object.keys(images.gallery).length;
+
+    useEffect(() => {
+        const box = imageRef.current;
+
+        gsap.from(box, {
+            y: 100,
+            opacity: 0,
+            delay: 3
+        });
+
+        gsap.to(box, {
+            y: 0,
+            opacity: 1,
+            duration: 3,
+            delay: 3,
+            ease: "power4.inOut"
+        });
+    }, []);
+    
 
     const showMoreImages = () => {
         setVisibleImages(prevVisibleImages => prevVisibleImages + 10);
@@ -14,7 +35,7 @@ export function Work(){
         <Container>
             <Headline title="Work" description="Here are some of my artworks!" id="work"/>
 
-            <div className="gallery">
+            <div className="gallery" ref={ imageRef }>
                 {
                     Object.keys(images.gallery).slice(0, visibleImages).map((key) => (
                         <picture key={ key }>

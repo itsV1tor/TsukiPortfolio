@@ -69,7 +69,7 @@ export function Header(){
         const box = descriptionRef.current;
 
         gsap.from(box, {
-           y: 100,
+           y: -100,
            opacity: 0,
            delay: 3
         });
