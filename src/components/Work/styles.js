@@ -7,21 +7,21 @@ export const Container = styled.section`
 
     .gallery{
         width: 100%;
+        min-height: fit-content;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
-
+        align-items: center;
         gap: 12px;
+        div{
+            height: 400px;
+        }
         img{
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 20px;
+            border-radius: 12px;
         }
-    }
-
-    .none{
-        display: none;
     }
 
     #show{
@@ -37,21 +37,6 @@ export const Container = styled.section`
         &:hover{
             transform: scale(1.05);
             box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-;
         }
-    ;
-
-    }
-
-    .small-card{
-
-    }
-
-    .medium-card{
-
-    }
-
-    .large-card{
-
     }
 `;

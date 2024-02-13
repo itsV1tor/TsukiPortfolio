@@ -5,6 +5,7 @@ import { useState } from "react";
 
 export function Work(){
     const [ visibleImages, setVisibleImages ] = useState(10);
+    const totalImages = Object.keys(images.gallery).length;
 
     const showMoreImages = () => {
         setVisibleImages(prevVisibleImages => prevVisibleImages + 10);
@@ -16,12 +17,17 @@ export function Work(){
             <div className="gallery">
                 {
                     Object.keys(images.gallery).slice(0, visibleImages).map((key) => (
-                        <img key={key} src={ images.gallery[key] } alt={ `Image ${ key }` } />
+                        <div key={ key }>
+                            <img loading="lazy" key={key} src={ images.gallery[key] } alt={ `Image ${ key }` } />
+                        </div>
                     ))
                 }
             </div>
-
-            <button id="show" onClick={ showMoreImages }>Show More!</button>
+                {
+                    visibleImages < totalImages && (
+                        <button id="show" onClick={ showMoreImages }>Show More!</button>
+                    )
+                }
         </Container>
     )
 }
