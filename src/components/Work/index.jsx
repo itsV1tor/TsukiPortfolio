@@ -19,7 +19,7 @@ export function Work(){
                     Object.keys(images.gallery).slice(0, visibleImages).map((key) => (
                         <picture key={ key }>
                             <source type="image/webp" />
-                            <img loading="lazy" role="presentation" decoding="async" fetchpriority="high" key={key} src={ images.gallery[key] } alt={ `Image ${ key }` } />
+                            <img role="presentation" decoding="async" fetchpriority="high" key={key} src={ images.gallery[key] } alt={ `Image ${ key }` } />
                         </picture>
                     ))
                 }
