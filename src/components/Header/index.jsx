@@ -15,10 +15,6 @@ export function Header(){
 
     useEffect(() => {
         const box = bannerRef.current;
-        gsap.from(box, {
-            y: -160,
-            delay: 1
-        })
         
         gsap.to(box, {
             delay: 1,
@@ -31,10 +27,6 @@ export function Header(){
 
     useEffect(() => {
         const box = iconRef.current;
-        gsap.from(box, {
-            y: 160,
-            delay: 2
-        })
 
         gsap.to(box, {
             delay: 2,
@@ -48,11 +40,6 @@ export function Header(){
     useEffect(() => {
         const box = titleRef.current;
 
-        gsap.from(box, {
-            y: 50,
-            delay: 3
-        });
-
         gsap.to(box, {
             y: 0,
             opacity: 1,
@@ -65,11 +52,6 @@ export function Header(){
     useEffect(() => {
         const box = descriptionRef.current;
 
-        gsap.from(box, {
-           y: 100,
-           delay: 3
-        });
-
         gsap.to(box, {
             y: 0,
             opacity: 1,
@@ -81,11 +63,6 @@ export function Header(){
 
     useEffect(() => {
         const box = socialRef.current;
-
-        gsap.from(box, {
-            x: 100,
-            delay: 2
-        });
 
         gsap.to(box, {
             x: 0,

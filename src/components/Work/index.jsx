@@ -12,11 +12,6 @@ export function Work(){
     useEffect(() => {
         const box = imageRef.current;
 
-        gsap.from(box, {
-            y: 100,
-            delay: 3
-        });
-
         gsap.to(box, {
             y: 0,
             opacity: 1,

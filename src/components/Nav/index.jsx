@@ -8,11 +8,6 @@ export function Nav(){
     useEffect(() => {
         const box = navRef.current;
 
-        gsap.from(box, {
-             y: -50,
-             delay: 3
-        });
-
         gsap.to(box, {
             y: 0,
             opacity: 1,

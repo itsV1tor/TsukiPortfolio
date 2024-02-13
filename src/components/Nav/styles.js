@@ -10,6 +10,7 @@ export const Container = styled.nav`
     top: 0;
     z-index: 1000;
     opacity: 0;
+    transform: translateY(-50px);
 
     a{
         font-weight: ${ props => props.theme.font.weight.medium };

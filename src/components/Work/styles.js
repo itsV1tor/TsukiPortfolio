@@ -14,6 +14,7 @@ export const Container = styled.section`
         align-items: center;
         gap: 12px;
         opacity: 0;
+        transform: translateY(100px);
         picture{
             height:400px;
         }

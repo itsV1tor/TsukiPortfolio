@@ -9,6 +9,7 @@ export const Container = styled.header`
     #banner{
         width: 100%;
         opacity: 0;
+        transform: translateY(-160px);
     }
 
     #icon{
@@ -18,6 +19,8 @@ export const Container = styled.header`
         margin-top: -50px;
         border-radius: 50%;
         border: 4px solid ${ props => props.theme.colors.white };
+        opacity: 0;
+        transform: translateY(100px);
     }
 
     >div{
@@ -32,6 +35,7 @@ export const Container = styled.header`
             right: 20px;
             top: 12px;
             opacity: 0;
+            transform: translateX(100px);
         }
 
         a + a{
@@ -54,11 +58,13 @@ export const Container = styled.header`
         text-transform: uppercase;
         margin-top: 12px;
         opacity: 0;
+        transform: translateY(50px);
     }
     
     p{
         font-weight: ${ props => props.theme.font.weight.medium };
         color: ${ props => props.theme.colors.gray_300 };
         opacity: 0; 
+        transform: translateY(50px);
     }
 `;

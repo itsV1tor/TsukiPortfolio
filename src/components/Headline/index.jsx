@@ -8,11 +8,6 @@ export function Headline(props){
     useEffect(() => {
         const box = headlineRef.current;
 
-        gsap.from(box, {
-            x: 50,
-            delay: 4
-        });
-
         gsap.to(box, {
             x: 0,
             opacity: 1,
