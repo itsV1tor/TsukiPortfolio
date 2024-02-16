@@ -80,7 +80,7 @@ export function Header(){
                 <img ref={ iconRef } src= { images.icon } alt="tsuki icon" id="icon"/>
 
                 <div ref={ socialRef }>
-                    <a href="" target="_blank"><FaInstagram size={ 20 } id="instagram-icon"/></a>
+                    <a href="https://www.instagram.com/tsuki_artss" target="_blank"><FaInstagram size={ 20 } id="instagram-icon"/></a>
                     <a href="https://twitter.com/tsuki696" target="_blank"><FaXTwitter size={ 20 } id="x-icon"/></a>
                 </div>
             </div>
