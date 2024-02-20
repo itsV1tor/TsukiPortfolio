@@ -1,8 +1,12 @@
-# React + Vite
+<h1 align="center">TSUKI PORTFOLIO</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h6 align="center">See Tsuki's incredible creations in a portfolio that blends the ancient and the modern in a unique and enchanting way.</h6>
 
-Currently, two official plugins are available:
+![img](https://github.com/itsV1tor/tsukiPortfolio/assets/121408231/5883b691-65d7-40bb-8f20-92b76e4b884d)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies
+
+- React
+- JavaScript
+- GSAP
+- Styled Components
