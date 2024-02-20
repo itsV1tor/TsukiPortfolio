@@ -10,3 +10,6 @@
 - JavaScript
 - GSAP
 - Styled Components
+
+## Credits
+Artist : @tsuki_artss | @tsuki696
