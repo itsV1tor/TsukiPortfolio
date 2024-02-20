@@ -10,6 +10,7 @@
 - JavaScript
 - GSAP
 - Styled Components
+- node
 
 ## Credits
 Artist : @tsuki_artss | @tsuki696
